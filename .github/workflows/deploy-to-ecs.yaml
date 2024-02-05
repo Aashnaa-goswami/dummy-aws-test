@@ -49,7 +49,7 @@ jobs:
         uses: aws-actions/amazon-ecs-render-task-definition@v1
         with: dummy-aws-con
           task-definition: ./deploy/dummy-app-task-def.json
-          container-name:
+          container-name: dummy-aws-con
           image: ${{ steps.build-image.outputs.image }}
 
       - name: Deploy Amazon ECS task definition
