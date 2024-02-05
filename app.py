@@ -18,4 +18,9 @@ def test2():
 def dojo():
   return "Dojo!"
 
+
+@app.route("/health")
+def health():
+  return jsonify({"status": "UP", "msg": "server up and running"}), 200
+
 #  this line added in feature-1
