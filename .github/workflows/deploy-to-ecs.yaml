@@ -3,6 +3,8 @@ name: Build and Push Image to AWS ECR
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
 
 jobs:
   build-and-deploy:
