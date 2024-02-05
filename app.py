@@ -18,6 +18,9 @@ def test2():
 def dojo():
   return "Dojo!"
 
+@app.route("/new-route")
+def new_route():
+  return "New route added"
 
 @app.route("/health")
 def health():
