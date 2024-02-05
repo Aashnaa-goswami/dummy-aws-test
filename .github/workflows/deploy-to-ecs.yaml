@@ -47,7 +47,7 @@ jobs:
       - name: Fill in the new image ID in the Amazon ECS task definition
         id: task-def
         uses: aws-actions/amazon-ecs-render-task-definition@v1
-        with: dummy-aws-con
+        with:
           task-definition: ./deploy/dummy-app-task-def.json
           container-name: dummy-aws-con
           image: ${{ steps.build-image.outputs.image }}
