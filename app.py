@@ -10,6 +10,10 @@ def hello_world():
 def test():
   return "Test!"
 
+@app.route('/test2')
+def test2():
+  return "Test2!"
+
 @app.route('/dojo')
 def dojo():
   return "Dojo!"
